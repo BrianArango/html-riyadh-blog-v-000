@@ -49,7 +49,7 @@ RSpec.describe "Well-Formed HTML Document" do
         links = content_section.children.select {|ch| ch.name == "a"}
         expect(links.length).to be >= 2, "Make sure to include all three 'p' tags"
         expect(links[0].attributes["href"].value).to eq("http://www.lonelyplanet.com/saudi-arabia/riyadh")
-        expect(links[1].attributes["href"].value).to eq("http://en.wikipedia.org/wiki/Riyadh")
+        expect(links[1].attributes["href"].value).to eq()
       
       end
 
